@@ -28,3 +28,6 @@ spec:
             - name: http
               containerPort: {{ .Values.containerPort.http }}
               protocol: TCP
+          {{- if .Values.resources }}
+          resources: {{ toYaml .Values.resources | nindent 12 }}
+          {{- end }}
