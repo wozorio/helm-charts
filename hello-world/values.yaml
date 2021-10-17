@@ -9,6 +9,14 @@ labels:
 
 replicaCount: 1
 
+resources:
+  limits:
+    cpu: 60m
+    memory: 40Mi
+  requests:
+    cpu: 30m
+    memory: 20Mi
+
 autoscaling:
   annotations: {}
   enabled: false
