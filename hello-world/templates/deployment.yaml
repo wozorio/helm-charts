@@ -15,11 +15,10 @@ spec:
       {{ toYaml .Values.labels | nindent 6 }}
   template:
     metadata:
-    name: {{ .Chart.Name }}
-    labels:
-      app.kubernetes.io/name: {{ .Chart.Name }}
-      app.kubernetes.io/version: {{ .Chart.AppVersion }}
-      {{ toYaml .Values.labels | nindent 4 }}
+      labels:
+        app.kubernetes.io/name: {{ .Chart.Name }}
+        app.kubernetes.io/version: {{ .Chart.AppVersion }}
+        {{ toYaml .Values.labels | nindent 8 }}
     spec:  
       containers:
         - name: {{ .Chart.Name }}
