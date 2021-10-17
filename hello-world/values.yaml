@@ -16,3 +16,6 @@ autoscaling:
   maxReplicas: 2
   targetCPUUtilizationPercentage: 50
   targetMemoryUtilizationPercentage: 50
+
+containerPort:
+  http: 80
