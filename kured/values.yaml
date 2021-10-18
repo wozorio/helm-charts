@@ -4,6 +4,8 @@ kured:
     pullPolicy: IfNotPresent
 
   podLabels:
+    app.kubernetes.io/name: kured
+    app.kubernetes.io/version: "1.8.0"
     app.kubernetes.io/component: application
     app.kubernetes.io/managed-by: helm
 
