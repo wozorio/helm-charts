@@ -16,5 +16,3 @@ kured:
     requests:
       cpu: 1m
       memory: 16Mi
-
-  priorityClassName: node-essential
