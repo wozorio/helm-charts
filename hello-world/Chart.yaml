@@ -4,3 +4,6 @@ description: A Helm chart to deploy hello-world
 type: application
 version: 1.0.0
 appVersion: "latest"
+maintainers:
+  - name: wellington-ozorio
+    email: well.ozorio@gmail.com
