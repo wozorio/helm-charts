@@ -1,0 +1,11 @@
+apiVersion: v2
+name: kured
+description: A Helm chart to deploy kured (Kubernetes Reboot Daemon)
+type: application
+version: 1.0.0
+appVersion: "1.8.0"
+type: application
+dependencies:
+  - name: kured
+    version: 2.10.0
+    repository: https://weaveworks.github.io/kured

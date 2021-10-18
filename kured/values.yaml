@@ -1,0 +1,18 @@
+kured:
+  image:
+    repository: weaveworks/kured
+    pullPolicy: IfNotPresent
+
+  podLabels:
+    app.kubernetes.io/component: application
+    app.kubernetes.io/managed-by: helm
+
+  resources:
+    limits:
+      cpu: 5m
+      memory: 48Mi
+    requests:
+      cpu: 1m
+      memory: 16Mi
+
+  priorityClassName: node-essential
