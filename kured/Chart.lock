@@ -1,0 +1,6 @@
+dependencies:
+- name: kured
+  repository: https://weaveworks.github.io/kured
+  version: 2.10.0
+digest: sha256:47aa2ddfe15842fb55310deb248090e1522e04ad43cd25d3fdb4a13fa6b64b20
+generated: "2021-10-18T11:39:10.3127799-03:00"
