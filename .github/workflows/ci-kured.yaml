@@ -32,4 +32,6 @@ jobs:
         uses: helm/kind-action@v1.2.0
 
       - name: Install chart
-        run: helm install kured charts/kured
+        run: |
+          helm dependency update charts/kured
+          helm install kured charts/kured
