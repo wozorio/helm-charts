@@ -27,17 +27,9 @@ jobs:
 
       - name: Set up chart-testing
         uses: helm/chart-testing-action@v2.1.0
-
-      - name: Run chart-testing (list-changed)
-        id: list-changed
-        run: |
-          changed=$(ct list-changed --chart-dirs hello-world)
-          if [[ -n "$changed" ]]; then
-            echo "::set-output name=changed::true"
-          fi
  
       - name: Run chart-testing (lint)
-        run: ct lint --chart-dirs hello-world
+        run: ct lint --chart-dirs kured
 
       - name: Create kind cluster
         uses: helm/kind-action@v1.2.0
