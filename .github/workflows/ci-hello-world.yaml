@@ -1,0 +1,34 @@
+name: CI-hello-world
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'charts/hello-world/**'
+  workflow_dispatch:
+
+jobs:
+  test-chart:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Set up Helm
+        uses: azure/setup-helm@v1
+        with:
+          version: v3.4.0
+
+      - name: Lint chart
+        run: helm lint charts/hello-world --debug
+
+      - name: Create kind cluster
+        uses: helm/kind-action@v1.2.0
+
+      - name: Install chart
+        run: |
+          helm dependency update charts/hello-world
+          helm install hello-world charts/hello-world --debug
