@@ -27,3 +27,9 @@ jobs:
 
       - name: Run Helm Lint
         run: helm lint charts/kured --debug
+        
+      - name: Create kind cluster
+        uses: helm/kind-action@v1.2.0
+
+      - name: Install chart
+        run: helm install kured charts/kured
