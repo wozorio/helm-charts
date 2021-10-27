@@ -3,7 +3,7 @@ name: Lint and Test Chart
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
   workflow_dispatch:
 
@@ -37,7 +37,7 @@ jobs:
           fi
  
       - name: Run chart-testing (lint)
-        run: ct lint --chart-dirs kured
+        run: ct lint --chart-dirs charts/kured
 
       - name: Create kind cluster
         uses: helm/kind-action@v1.2.0
