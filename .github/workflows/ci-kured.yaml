@@ -37,7 +37,7 @@ jobs:
           fi
  
       - name: Run chart-testing (lint)
-        run: ct lint --charts kured --check-version-increment
+        run: ct lint --charts kured --chart-dirs charts/kured --check-version-increment
 
       - name: Create kind cluster
         uses: helm/kind-action@v1.2.0
