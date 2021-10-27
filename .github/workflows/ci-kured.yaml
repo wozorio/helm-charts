@@ -4,7 +4,11 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'charts/kured/**'
   pull_request:
+    paths:
+    - 'charts/kured/**'
   workflow_dispatch:
 
 jobs:
