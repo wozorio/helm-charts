@@ -35,9 +35,12 @@ jobs:
           if [[ -n "$changed" ]]; then
             echo "::set-output name=changed::true"
           fi
+      
+      - name: List directories
+        run: ls -l
 
       - name: Run chart-testing (lint)
-        run: ct lint --chart-dirs ./kured/charts
+        run: ct lint --chart-dirs ./helm-charts/kured/charts
 
       - name: Create kind cluster
         uses: helm/kind-action@v1.2.0
