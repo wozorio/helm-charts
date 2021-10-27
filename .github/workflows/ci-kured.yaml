@@ -1,4 +1,4 @@
-name: Lint and Test Chart
+name: CI-kured
 
 on:
   push:
@@ -37,7 +37,7 @@ jobs:
           fi
  
       - name: Run chart-testing (lint)
-        run: ct lint --charts kured --chart-dirs charts/kured
+        run: ct lint --charts kured --check-version-increment
 
       - name: Create kind cluster
         uses: helm/kind-action@v1.2.0
