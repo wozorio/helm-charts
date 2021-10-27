@@ -16,7 +16,7 @@ The advantage of this approach is that it allows me to further customize the dep
     ```
     cd helm-charts
     ```
-1. Update chart dependencies
+1. Update the chart dependencies
     ```
     helm dependency update kured
     ```
