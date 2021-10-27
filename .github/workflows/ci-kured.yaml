@@ -5,10 +5,10 @@ on:
     branches:
       - main
     paths:
-      - charts/kured/*
+      - 'charts/kured/**'
   pull_request:
     paths:
-    - charts/kured/*
+    - 'charts/kured/**'
   workflow_dispatch:
 
 jobs:
