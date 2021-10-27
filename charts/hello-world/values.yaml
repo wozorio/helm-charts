@@ -1,0 +1,28 @@
+image:
+  repository: hello-world
+  pullPolicy: IfNotPresent
+  digest: sha256:f54a58bc1aac5ea1a25d796ae155dc228b3f0e11d046ae276b39c4bf2f13d8c4
+
+labels:
+  app.kubernetes.io/component: application
+  app.kubernetes.io/managed-by: helm
+
+replicaCount: 1
+
+autoscaling:
+  enabled: true
+  minReplicas: 1
+  maxReplicas: 2
+  targetCPUUtilizationPercentage: 50
+  targetMemoryUtilizationPercentage: 50
+
+containerPort:
+  http: 80
+
+resources:
+  limits:
+    cpu: 2m
+    memory: 32Mi
+  requests:
+    cpu: 1m
+    memory: 16Mi

@@ -1,0 +1,12 @@
+kured:
+  image:
+    repository: weaveworks/kured
+    pullPolicy: IfNotPresent
+
+  resources:
+    limits:
+      cpu: 5m
+      memory: 48Mi
+    requests:
+      cpu: 1m
+      memory: 16Mi
