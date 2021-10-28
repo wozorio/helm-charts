@@ -1,6 +1,6 @@
 # Helm chart: kured
 
-[![CI-kured](https://github.com/wozorio/helm-charts/actions/workflows/ci-kured.yaml/badge.svg)](https://github.com/wozorio/helm-charts/actions/workflows/ci-kured.yaml)
+[![CI-kured](https://github.com/wozorio/helm-charts/actions/workflows/ci-kured.yml/badge.svg)](https://github.com/wozorio/helm-charts/actions/workflows/ci-kured.yml)
 
 This Helm chart deploys the official [kured](https://github.com/weaveworks/kured) chart as a dependency.
 
