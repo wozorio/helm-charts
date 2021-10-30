@@ -6,8 +6,8 @@ on:
       - main
     paths:
       - 'charts/kured/**'
-    pull_request:
-    workflow_dispatch:
+  pull_request:
+  workflow_dispatch:
 
 jobs:
   test-chart:
