@@ -2,7 +2,7 @@ apiVersion: v2
 name: kured
 description: A Helm chart to deploy kured (Kubernetes Reboot Daemon)
 type: application
-version: 1.0.0
+version: 1.0.1
 appVersion: "1.8.0"
 maintainers:
   - name: wozorio
