@@ -5,7 +5,7 @@ type: application
 version: 1.0.1
 appVersion: "1.8.0"
 maintainers:
-  - name: wellington-ozorio
+  - name: wozorio
     email: well.ozorio@gmail.com
 dependencies:
   - name: kured

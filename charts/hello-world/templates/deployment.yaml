@@ -28,7 +28,7 @@ spec:
     spec:  
       containers:
         - name: {{ .Chart.Name }}
-          image: "{{ .Values.image.repository }}:{{ .Chart.AppVersion }}@{{ .Values.image.digest }}"
+          image: "{{ .Values.image.repository }}:{{ .Chart.AppVersion }}{{- if .Values.image.digest }} @{{ .Values.image.digest }} {{- end -}}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - name: http
