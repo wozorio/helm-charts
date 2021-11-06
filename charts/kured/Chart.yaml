@@ -4,6 +4,9 @@ description: A Helm chart to deploy kured (Kubernetes Reboot Daemon)
 type: application
 version: 1.0.0
 appVersion: "1.8.0"
+maintainers:
+  - name: wozorio
+    email: well.ozorio@gmail.com
 dependencies:
   - name: kured
     version: 2.10.0
