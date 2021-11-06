@@ -2,7 +2,7 @@ apiVersion: v2
 name: hello-world
 description: A Helm chart to deploy the hello-world app
 type: application
-version: 1.0.1
+version: 1.0.0
 appVersion: "latest"
 maintainers:
   - name: wozorio
