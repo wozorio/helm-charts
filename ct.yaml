@@ -3,4 +3,6 @@ remote: origin
 target-branch: main
 chart-dirs:
   - charts
+chart-repos:
+  - kured=https://weaveworks.github.io/kured/
 helm-extra-args: --timeout 600s
