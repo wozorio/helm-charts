@@ -21,7 +21,6 @@ containerPort:
 
 resources:
   limits:
-    cpu: 2m
     memory: 32Mi
   requests:
     cpu: 1m
