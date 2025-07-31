@@ -6,7 +6,7 @@ version: 1.0.0
 appVersion: "1.8.0"
 maintainers:
   - name: wozorio
-    email: well.ozorio@gmail.com
+    email: wozorio@duck.com
 dependencies:
   - name: kured
     version: 2.10.0
